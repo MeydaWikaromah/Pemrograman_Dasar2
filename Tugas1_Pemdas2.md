@@ -7,6 +7,7 @@
 ## **CHAPTER 1 INTRODUCTION**
 
 ### **1.1 Computer Programs**
+----
 
 You have probably used a computer for work or fun. Many people use computers for everyday tasks such as electronic banking or writing a term paper. Computers are good for such tasks. They can handle repetitive chores, such as totaling up numbers or placing words on a page, without getting bored or exhausted. 
 
@@ -44,96 +45,371 @@ To write a computer game with motion and sound effects or a word processor that 
 Untuk menulis game komputer dengan efek gerakan dan suara atau pengolah kata yang mendukung font dan gambar mewah adalah tugas kompleks yang membutuhkan tim yang terdiri dari banyak orang programmer yang sangat terampil. Upaya pemrograman pertama Anda akan lebih biasa.Konsep dan keterampilan yang Anda pelajari dalam buku ini membentuk fondasi penting, dan Anda tidak boleh kecewa jika program pertama Anda tidak menyaingi sophis ticated perangkat lunak yang akrab bagi Anda. Sebenarnya, Anda akan menemukan bahwa ada sensasi yang luar biasa bahkan dalam tugas pemrograman sederhana. Ini adalah pengalaman yang luar biasa untuk melihat komputerdengan tepat dan cepat melaksanakan tugas yang akan memakan waktu berjam-jam kerja keras, untuk membuat perubahan kecil dalam program yang mengarah pada perbaikan segera, dan untuk melihat komputer menjadi perpanjangan dari kekuatan mental Anda.
 
 ### **1.2 Anatomi Komputer**
+----
+
+To understand the programming process, you need to have a rudimentary understanding of the building blocks that make up a computer. We will look at a personal 
+computer. Larger computers have faster, larger, or more powerful components, but 
+they have fundamentally the same design.
 
 Untuk memahami proses pemrograman, Anda harus memiliki pemahaman dasar dari blok bangunan yang membentuk komputer. Kami akan melihat secara pribadi komputer. Komputer yang lebih besar memiliki komponen yang lebih cepat, lebih besar, atau lebih kuat, tetapimereka pada dasarnya memiliki desain yang sama.
 
-Di jantung komputer terletak pusatnyaunit pemrosesan (CPU) (lihat Gambar 1). Bagian dalam pengkabelan CPU sangat rumit.Misalnya, prosesor Intel Core (yang populerCPU untuk per komputer pribadi pada saat initulisan) terdiri dari beberapa ratus juta elemen struktural, yang disebut transistor.CPU melakukan kontrol program dan data pengolahan. Artinya, CPU menempatkan dan mengeksekusi instruksi program; itu melaksanakan operasi aritmatika seperti penjumlahan, pengurangan,perkalian, dan pembagian; itu mengambil datadari memori eksternal atau perangkat dan tempatdata yang diproses ke dalam penyimpanan.
+![Gambar](foto/figure1.png)
 
-Ada dua macam penyimpanan. Penyimpanan utama,atau memori, dibuat dari sirkuit elektronik yang dapat menyimpan data, asalkan:disuplai dengan tenaga listrik. Penyimpanan sekunder, biasanya hard disk (lihat Gambar 2)atau solid-state drive, menyediakan penyimpanan yang lebih lambat dan lebih murah yang bertahan tanpa listrik. Sebuah hard disk terdiri dari piringan berputar, yang dilapisi dengan magnetnbahan. Solid-state drive menggunakan komponen elektronik yang dapat menyimpan informasitanpa daya, dan tanpa bagian yang bergerak.Untuk berinteraksi dengan pengguna manusia, komputer membutuhkan perangkat periferal. Komputer mentransmisikan informasi (disebut output) kepada pengguna melalui layar tampilan, speaker, dan printer. Pengguna dapat memasukkan informasi (disebut input) untuk komputerdengan menggunakan keyboard atau alat penunjuk seperti mouse.
+At the heart of the computer lies the central processing unit (CPU) (see Figure 1). The inside wiring of the CPU is enormously complicated. For example, the Intel Core processor (a popular CPU for personal computers at the time of this 
+writing) is composed of several hundred million structural elements, called transistors.
+
+Di jantung komputer terletak pusatnyaunit pemrosesan (CPU) (lihat Gambar 1). Bagian dalam pengkabelan CPU sangat rumit.Misalnya, prosesor Intel Core (yang populerCPU untuk per komputer pribadi pada saat initulisan) terdiri dari beberapa ratus juta elemen struktural, yang disebut transistor.
+
+The CPU performs program control and 
+data processing. That is, the CPU locates and 
+executes the program instructions; it carries out 
+arithmetic operations such as addition, subtraction, multiplication, and division; it fetches data 
+from external memory or devices and places 
+processed data into storage. 
+
+CPU melakukan kontrol program dan data pengolahan. Artinya, CPU menempatkan dan mengeksekusi instruksi program; itu melaksanakan operasi aritmatika seperti penjumlahan, pengurangan,perkalian, dan pembagian; itu mengambil datadari memori eksternal atau perangkat dan tempatdata yang diproses ke dalam penyimpanan.
+
+There are two kinds of storage. Primary storage, or memory, is made from electronic circuits that can store data, provided they are 
+supplied with electric power. Secondary storage, usually a hard disk (see Figure 2)
+or a solid-state drive, provides slower and less expensive storage that persists without electricity. A hard disk consists of rotating platters, which are coated with a magnetic 
+material. A solid-state drive uses electronic components that can retain information 
+without power, and without moving parts.
+
+Ada dua macam penyimpanan. Penyimpanan utama,atau memori, dibuat dari sirkuit elektronik yang dapat menyimpan data, asalkan:disuplai dengan tenaga listrik. Penyimpanan sekunder, biasanya hard disk (lihat Gambar 2)atau solid-state drive, menyediakan penyimpanan yang lebih lambat dan lebih murah yang bertahan tanpa listrik. Sebuah hard disk terdiri dari piringan berputar, yang dilapisi dengan magnetnbahan. Solid-state drive menggunakan komponen elektronik yang dapat menyimpan informasitanpa daya, dan tanpa bagian yang bergerak.
+
+![Gambar](foto/figure2.png)
+
+To interact with a human user, a computer requires peripheral devices. The computer transmits information (called output) to the user through a display screen, 
+speakers, and printers. The user can enter information (called input) for the computer 
+by using a keyboard or a pointing device such as a mouse.
+
+Untuk berinteraksi dengan pengguna manusia, komputer membutuhkan perangkat periferal. Komputer mentransmisikan informasi (disebut output) kepada pengguna melalui layar tampilan, speaker, dan printer. Pengguna dapat memasukkan informasi (disebut input) untuk komputerdengan menggunakan keyboard atau alat penunjuk seperti mouse.
+
+Some computers are self-contained units, whereas others are interconnected 
+through networks. Through the network cabling, the computer can read data and 
+programs from central storage locations or send data to other computers. To the user 
+of a networked computer, it may not even be obvious which data reside on the computer itself and which are transmitted through the network. 
 
 Beberapa komputer adalah unit mandiri, sedangkan yang lain saling berhubungan melalui jaringan. Melalui kabel jaringan, komputer dapat membaca data dan program dari lokasi penyimpanan pusat atau mengirim data ke komputer lain. Untuk penggunadari komputer jaringan, bahkan mungkin tidak jelas data mana yang berada di komputeritu sendiri dan yang ditransmisikan melalui jaringan.
 
-Gambar 3 memberikan gambaran skematis arsitektur komputer pribadi.
+Figure 3 gives a schematic overview of the architecture of a personal computer. 
+Program instructions and data (such as text, numbers, audio, or video) reside in secondary storage or elsewhere on the network. When a program is started, its instructions are brought into memory, where the CPU can read them. The CPU reads and 
+executes one instruction at a time. As directed by these instructions, the CPU reads 
+data, modifies it, and writes it back to memory or secondary storage. Some program 
+instructions will cause the CPU to place dots on the display screen or printer or to 
+vibrate the speaker. As these actions happen many times over and at great speed, the 
+human user will perceive images and sound. Some program instructions read user 
+input from the keyboard, mouse, touch sensor, or microphone. The program analyzes the nature of these inputs and then executes the next appropriate instruction.
 
+Gambar 3 memberikan gambaran skematis arsitektur komputer pribadi.
 Instruksi dan data program (seperti teks, angka, audio, atau video) berada di sekunder penyimpanan atau di tempat lain di jaringan. Ketika sebuah program dimulai, instruksinyadibawa ke memori, di mana CPU dapat membacanya. CPU membaca dan mengeksekusi satu instruksi pada suatu waktu. Seperti yang diarahkan oleh instruksi ini, CPU membacadata, memodifikasinya, dan menulisnya kembali ke memori atau penyimpanan sekunder. Beberapa programinstruksi akan menyebabkan CPU menempatkan titik-titik pada layar tampilan atau printer atau kegetaran speakernya. Karena tindakan ini terjadi berkali-kali dan dengan kecepatan tinggi,pengguna manusia akan melihat gambar dan suara. Beberapa instruksi program membaca penggunamasukan dari keyboard, mouse, sensor sentuh, atau mikrofon. Analisis programsifat input ini dan kemudian mengeksekusi instruksi yang sesuai berikutnya.
 
-Ketika komputer pertama kali ditemukan pada tahun 1940-an, komputer memenuhi seluruh ruangan.  Foto di bawah menunjukkan ENIAC (integrator numerik elektronik dan komputer), selesai pada tahun 1946 di University of Pennsylvania.  ENIAC digunakan oleh militer untuk menghitung lintasan proyektil.  Saat ini, fasilitas komputasi mesin pencari, toko internet, dan jejaring sosial memenuhi gedung-gedung besar yang disebut pusat data.  Di ujung lain spektrum, komputer ada di sekitar kita.  Ponsel Anda memiliki komputer di dalamnya, seperti halnya banyak kartu kredit dan kartu tarif untuk angkutan umum.  Sebuah mobil modern memiliki beberapa komputer––untuk mengontrol mesin, rem, lampu, dan radio.  Munculnya komputasi di mana-mana berubah banyak aspek dari kami hidup.  Pabrik digunakan mempekerjakan orang untuk lakukan perakitan berulang tugas-tugas yang hari ini dilakukan oleh komputer- robot yang dikendalikan, operasi dimakan oleh segelintir orang siapa yang tahu caranya bekerja dengan komputer.  Buku, musik, dan film saat ini sering dikonsumsi di komputer, dan komputer hampir selalu terlibat dalam produksi mereka.  Buku yang sedang Anda baca sekarang tidak mungkin ditulis tanpa komputer. Mengetahui tentang komputer dan cara memprogramnya telah menjadi keterampilan penting dalam banyak karier.  Insinyur merancang mobil yang dikendalikan komputer dan peralatan medis yang menyelamatkan nyawa.  Ilmuwan komputer mengembangkan program yang membantu orang berkumpul untuk mendukung tujuan sosial.  Misalnya, para aktivis menggunakan jejaring sosial untuk berbagi video yang menunjukkan pelecehan oleh rezim yang represif, dan informasi ini berperan penting dalam mengubah opini publik. Ketika komputer, besar dan kecil, menjadi semakin tertanam dalam kehidupan kita sehari-hari, semakin penting bagi setiap orang untuk memahami cara kerjanya, dan cara bekerja dengannya.  Saat Anda menggunakan buku ini untuk mempelajari cara memprogram komputer, Anda akan mengembangkan pemahaman yang baik tentang dasar-dasar komputasi yang akan membuat Anda menjadi warga negara yang lebih berpengetahuan dan, mungkin, seorang profesional komputasi.
+![Gambar](foto/figure3.png)
+
+**Computing & Society 1.1 Computer Are Everywhere**
+
+----
+
+When computers 
+were first invented 
+in the 1940s, a computer filled an 
+entire room. The photo below shows 
+the ENIAC (electronic numerical integrator and computer), completed in 
+1946 at the University of Pennsylvania. 
+The ENIAC was used by the military to 
+compute the trajectories of projectiles. 
+Nowadays, computing facilities of 
+search engines, Internet shops, and 
+social networks fill huge buildings 
+called data centers. At the other end of 
+the spectrum, computers are all around 
+us. Your cell phone has a computer 
+inside, as do many credit cards and fare 
+cards for public transit. A modern car 
+has several computers––to control the 
+engine, brakes, lights, and the radio.
+
+Ketika komputer pertama kali ditemukan pada tahun 1940-an, komputer memenuhi seluruh ruangan.  Foto di bawah menunjukkan ENIAC (integrator numerik elektronik dan komputer), selesai pada tahun 1946 di University of Pennsylvania.  ENIAC digunakan oleh militer untuk menghitung lintasan proyektil.  Saat ini, fasilitas komputasi mesin pencari, toko internet, dan jejaring sosial memenuhi gedung-gedung besar yang disebut pusat data.  Di ujung lain spektrum, komputer ada di sekitar kita.  Ponsel Anda memiliki komputer di dalamnya, seperti halnya banyak kartu kredit dan kartu tarif untuk angkutan umum.  Sebuah mobil modern memiliki beberapa komputer––untuk mengontrol mesin, rem, lampu, dan radio.  
+
+The advent of ubiquitous computing changed 
+many aspects of our 
+lives. Factories used 
+to employ people to 
+do repetitive assembly 
+tasks that are today 
+carried out by computercontrolled robots, operated by a few people 
+who know how to work 
+with those computers. 
+Books, music, and movies nowadays are often 
+consumed on computers, and computers are 
+almost always involved 
+in their production. The book that you 
+are reading right now could not have been written without computers.
+
+Munculnya komputasi di mana-mana berubah banyak aspek dari kami hidup.  Pabrik digunakan mempekerjakan orang untuk lakukan perakitan berulang tugas-tugas yang hari ini dilakukan oleh komputer- robot yang dikendalikan, operasi dimakan oleh segelintir orang siapa yang tahu caranya bekerja dengan komputer.  Buku, musik, dan film saat ini sering dikonsumsi di komputer, dan komputer hampir selalu terlibat dalam produksi mereka.  Buku yang sedang Anda baca sekarang tidak mungkin ditulis tanpa komputer. 
+
+![Gambar](foto/cds.png)
+
+Knowing about computers and 
+how to program them has become 
+an essential skill in many careers. 
+Engineers design computer-controlled 
+cars and medical equipment that 
+preserve lives. Computer scientists 
+develop programs that help people 
+come together to support social 
+causes. For example, activists used 
+social networks to share videos 
+showing abuse by repressive regimes, 
+and this information was instrumental 
+in changing public opinion.
+
+Mengetahui tentang komputer dan cara memprogramnya telah menjadi keterampilan penting dalam banyak karier.  Insinyur merancang mobil yang dikendalikan komputer dan peralatan medis yang menyelamatkan nyawa.  Ilmuwan komputer mengembangkan program yang membantu orang berkumpul untuk mendukung tujuan sosial.  Misalnya, para aktivis menggunakan jejaring sosial untuk berbagi video yang menunjukkan pelecehan oleh rezim yang represif, dan informasi ini berperan penting dalam mengubah opini publik. 
+
+![Gambar](foto/eniac.png)
+
+As computers, large and small, 
+become ever more embedded in our 
+everyday lives, it is increasingly important for everyone to understand how 
+they work, and how to work with them. 
+As you use this book to learn how to 
+program a computer, you will develop 
+a good understanding of computing 
+fundamentals that will make you a 
+more informed citizen and, perhaps, 
+a computing professional.
+
+Ketika komputer, besar dan kecil, menjadi semakin tertanam dalam kehidupan kita sehari-hari, semakin penting bagi setiap orang untuk memahami cara kerjanya, dan cara bekerja dengannya.  Saat Anda menggunakan buku ini untuk mempelajari cara memprogram komputer, Anda akan mengembangkan pemahaman yang baik tentang dasar-dasar komputasi yang akan membuat Anda menjadi warga negara yang lebih berpengetahuan dan, mungkin, seorang profesional komputasi.
 
 ### **1.3 Bahasa Pemrograman Java**
 
+----
+
+In order to write a computer program, you need to provide a sequence of instructions 
+that the CPU can execute. A computer program consists of a large number of simple 
+CPU instructions, and it is tedious and error-prone to specify them one by one. For 
+that reason, high-level programming languages have been created. In a high-level 
+language, you specify the actions that your program should carry out. A compiler
+translates the high-level instructions into the more detailed instructions (called 
+machine code)required by the CPU. Many different programming languages have 
+been designed for different purposes. 
+
 Untuk menulis program komputer, Anda perlu memberikan urutan instruksi yang dapat dieksekusi oleh CPU. Sebuah program komputer terdiri dari sejumlah besar program instruksi CPU sederhana, dan membosankan juga rawan untuk kesalahan untuk menentukannya satu persatu. Karena alasan itu, bahasa pemrograman tingkat tinggi telah dibuat. Dalam bahasa tingkat tinggi, Anda menentukan tindakan yang harus dilakukan programnya. Penyusun menerjemahkan instruksi tingkat tinggi ke dalam instruksi yang lebih rinci (disebut kode mesin) yang dibutuhkan oleh CPU. Banyak bahasa pemrograman yang berbeda telah dirancang untuk tujuan yang berbeda.
 
- Pada tahun 1991, sebuah kelompok yang dipimpin oleh James Gosling dan Patrick Naughton di Sun Microsystems merancang sebuah bahasa pemrograman, berkode nama “Green”, untuk kegunaan di perangkat konsumen, seperti “set-top” televisi cerdas. Bahasanya dirancang untuk sederhana, aman, dan dapat digunakan oleh berbagai tipe prosesor yang berbeda. Tidak ada pelanggan yang pernah ditemukan untuk teknologi ini.
+In 1991, a group led by James Gosling and Patrick Naughton at Sun Microsystems 
+designed a programming language, code-named “Green”, for use in consumer 
+devices, such as intelligent television “set-top” boxes. The language was designed to 
+be simple, secure, and usable for many different processor types. No customer was 
+ever found for this technology.
+
+Pada tahun 1991, sebuah kelompok yang dipimpin oleh James Gosling dan Patrick Naughton di Sun Microsystems merancang sebuah bahasa pemrograman, berkode nama “Green”, untuk kegunaan di perangkat konsumen, seperti “set-top” televisi cerdas. Bahasanya dirancang untuk sederhana, aman, dan dapat digunakan oleh berbagai tipe prosesor yang berbeda. Tidak ada pelanggan yang pernah ditemukan untuk teknologi ini.
+
+Gosling recounts that in 1994 the team realized, 
+“We could write a really cool browser. It was one 
+of the few things in the client/server mainstream 
+that needed some of the weird things we’d done: 
+architecture neutral, real-time, reliable, secure.” 
+Java was introduced to an enthusiastic crowd at 
+the SunWorld exhibition in 1995, together with a 
+browser that ran applets—Java code that can be 
+located anywhere on the Internet. The figure at 
+right shows a typical example of an applet. 
+
 Gosling menceritakan pada tahun 1994 tim menyadari “Kita bisa menulis browser yang sangat keren. Itu adalah salah satu dari sedikit hal dalam arus utama klien/server yang membutuhkan beberapa hal aneh yang telah kami lakukan: arsitektur netral, waktu nyata, andal, aman.” Java diperkenalkan kepada orang banyak yang antusias di pameran SunWorld pada tahun 1995, bersama dengan browser yang menjalankan applet—kode Java yang dapat ditemukan di mana saja di Internet. Gambar di sebelah kanan menunjukkan contoh khas applet.
+
+![Gambar](foto/applet.png)
+
+Since then, Java has grown at a phenomenal rate. 
+Programmers have embraced the language because 
+it is easier to use than its closest rival, C++. In addition, Java has a rich library that 
+makes it possible to write portable programs that can bypass proprietary operating 
+systems—a feature that was eagerly sought by those who wanted to be independent 
+of those proprietary systems and was bitterly fought by their vendors. A “micro edition” and an “enterprise edition” of the Java library allow Java programmers to target 
+hardware ranging from smart cards to the largest Internet servers. 
 
 Sejak saat itu, Java telah berkembang dengan kecepatan yang fenomenal. Programmer telah menggunakan bahasa ini karena lebih mudah digunakan daripada saingan terdekatnya, C++. Selain itu, Java memiliki perpustakaan yang kaya yang memungkinkan untuk menulis program portabel yang dapat melewati sistem operasi berpemilik—fitur yang sangat dicari oleh mereka yang ingin menjadi independen dari sistem berpemilik tersebut dan diperjuangkan dengan sengit oleh vendor mereka.
 
+Because Java was designed for the Internet, it has two attributes that make it very 
+suitable for beginners: safety and portability. 
+
 Karena Java dirancang untuk internet, ia mempunyai dua atrbut yang membuatnya sangat cocok untuk pemula: keamanan dan portabilitas.
+
+![Gambar](foto/tabel1.png)
+
+Java was designed so that anyone can execute programs in their browser without 
+fear. The safety features of the Java language ensure that a program is terminated if it 
+tries to do something unsafe. Having a safe environment is also helpful for anyone 
+learning Java. When you make an error that results in unsafe behavior, your program 
+is terminated and you receive an accurate error report. 
 
 Java dirancang sehingga siapapun dapat menjalankan program di browser mereka tanpa takut. Fitur keamanan bahasa Java memastikan program dihentikan apabila mencoba untuk melakukan sesuatu membahayakan. Memiliki lingkungan yang aman juga membantu bagi siapapun yang mempelajari Java. Disaat Anda melakukan error yang mengakibatkan perilaku membahayakan, program Anda dihentikan dan Anda menerima laporan eror yang akurat.
 
+The other benefit of Java is portability. The same Java program will run, without 
+change, on Windows, UNIX, Linux, or Macintosh. In order to achieve portability, 
+the Java compiler does not translate Java programs directly into CPU instructions. 
+Instead, compiled Java programs contain instructions for the Java virtual machine, 
+a program that simulates a real CPU. Portability is another benefit for the beginning 
+student. You do not have to learn how to write programs for different platforms.
+
 Manfaat lain dari Java adalah portabilitas. Program Java yang sama akan jalan, tanpa perubahan, pada Windows, UNIX, Linux, atau Macintosh. Untuk mencapai portabilitas, penyusun Java tidak menerjemahkan program-program Java langsung ke dalam instruksi CPU. Melainkan, program Java yang tersusun memuat instruksi untuk **mesin virtual** Java, sebuah program yang menyimulasikan CPU nyata. Portabilitas adalah manfaat lain untuk murid pemula. Anda tidak harus belajar bagaimana cara menulis program untuk platform yang berbeda.
+
+At this time, Java is firmly established as one of the most important languages for 
+general-purpose programming as well as for computer science instruction. However, 
+although Java is a good language for beginners, it is not perfect, for three reasons.
 
 Saat ini, Java telah ditetapkan sebagai salah satu bahasa yang paling penting untuk pemrograman umum serta untuk instruksi ilmu komputer. Namun, meskipun Java adalah bahasa yang baik untuk pemula, tapi tidak sempurna, karena tiga alasan.
 
+Because Java was not specifically designed for students, no thought was given to
+making it really simple to write basic programs. A certain amount of technical machinery is necessary to write even the simplest programs. This is not a problem for professional programmers, but it can be a nuisance for beginning students. As you learn 
+how to program in Java, there will be times when you will be asked to be satisfied with 
+a preliminary explanation and wait for more complete detail in a later chapter.
+
 Karena Java tidak dirancang khusus untuk siswa, tidak ada pemikiran yang diberikan untuk membuatnya sangat sederhana untuk menulis program dasar. Sejumlah mesin teknis diperlukan untuk menulis bahkan program yang paling sederhana. Hal ini bukan masalah bagi programmer profesional, tetapi bisa menjadi gangguan bagi pelajar pemula. Saat Anda mempelajari caranya untuk memprogram di Java, akan ada saatnya Anda akan diminta untuk puas dengan penjelasan awal dan menunggu detail yang lebih lengkap di bab selanjutnya.
 
-Java telah diperpanjang berkali-kali selama masa pakainya—lihat Table 1. Dalam buku ini, kami menganggap bahwa Anda memiliki Java versi 8 atau yang lebih baru.
+Java has been extended many times during its life—see Table 1. In this book, we 
+assume that you have Java version 7 or later.
+
+Java telah diperpanjang berkali-kali selama masa pakainya—lihat Table 1. Dalam buku ini, kami menganggap bahwa Anda memiliki Java versi 7 atau yang lebih baru.
+
+Finally, you cannot hope to learn all of Java in one course. The Java language itself 
+is relatively simple, but Java contains a vast set of library packages that are required 
+to write useful programs. There are packages for graphics, user-interface design, 
+cryptography, networking, sound, database storage, and many other purposes. Even 
+expert Java programmers cannot hope to know the contents of all of the packages—
+they just use those that they need for particular projects. 
 
 Pada akhirnya, Anda tidak dapat berharap untuk mempelajari keseluruhan dari Java dalam satu pembelajaran. Bahasa Java itu sendiri relatif sederhana, tapi Java berisi sekumpulan library packages yang diperlukan untuk menulis program yang berguna. Ada paket untuk grafik, desain antarmuka pengguna, kriptografi, jaringan, suara, penyimpanan basis data, dan banyak kegunaan lainnya. Bahkan programmer Java yang ahli sekalipun tidak dapat berharap untuk mengetahui isi semua paket—mereka hanya menggunakan yang mereka perlukan untuk proyek tertentu.
+
+Using this book, you should expect to learn a good deal about the Java language 
+and about the most important packages. Keep in mind that the central goal of this 
+book is not to make you memorize Java minutiae, but to teach you how to think 
+about programming. 
 
 Dengan  menggunakan buku ini, Anda diharapkan untuk belajar banyak tentang bahasa Java dan tentang paket yang paling penting. Camkan selalu bahwa tujuan utama dari buku ini bukan untuk Anda mengingat detail kecil Java, tapi untuk mengajari Anda cara berpikir tentang pemrograman.
 
 ### **1.4 Menjadi Familiar dengan Lingkungan Pemrograman Anda**
 
+----
+
+Many students find that the tools they need as programmers are very different from 
+the software with which they are familiar. You should spend some time making yourself familiar with your programming environment. Because computer systems vary 
+widely, this book can only give an outline of the steps you need to follow. It is a good 
+idea to participate in a hands-on lab, or to ask a knowledgeable friend to give you a tour.
+
 Banyak siswa menemukan bahwa alat yang mereka butuhkan sebagai pemrogram sangat berbeda dari perangkat lunak yang mereka kenal. Anda harus meluangkan waktu untuk membiasakan diri dengan lingkungan pemrograman Anda. Karena sistem komputer sangat bervariasi, buku ini hanya dapat memberikan garis besar langkah-langkah yang perlu Anda ikuti. Merupakan ide bagus untuk Anda berpartisipasi dalam lab praktik, atau meminta teman yang berpengetahuan luas untuk memberi Anda penjelasan.
 
-Langkah 1 Mulai lingkungan pengembangan Java.
+![Gambar](foto/figuree4.png)
+
+**Step 1** Start the Java development environment.
+
+**Langkah 1** Mulai lingkungan pengembangan Java.
+
+Computer systems differ greatly in this regard. On many computers there is an integrated development environment in which you can write and test your programs. 
+On other computers you first launch an editor, a program that functions like a word 
+processor, in which you can enter your Java instructions; you then open a console 
+window and type commands to execute your program. You need to find out how to 
+get started with your environment.
 
 Sistem komputer sangat berbeda dalam hal ini. Pada banyak komputer terdapat lingkungan pengembangan terintegrasi di mana Anda dapat menulis dan menguji program Anda.
 
 Di komputer Anda pertama kali meluncurkan editor, sebuah program yang berfungsi seperti pengolah kata, di mana Anda dapat memasukkan instruksi Java Anda; Anda kemudian membuka jendela konsol dan ketik perintah untuk menjalankan program Anda. Anda perlu mencari tahu bagaimana memulai dengan lingkungan Anda.
 
-Langkah 2 Tulis sebuah program yang sederhana.
+**Step 2** Write a simple program.
+
+**Langkah 2** Tulis sebuah program yang sederhana.
+
+The traditional choice for the very first program in a new programming language is 
+a program that displays a simple greeting: “Hello, World!”. Let us follow that tradition. Here is the “Hello, World!” program in Java:
 
 Pilihan tradisional untuk program pertama dalam bahasa pemrograman baru adalah program yang menampilkan sapaan sederhana: “Halo, Dunia!”. Mari kita ikuti tradisi itu. Inilah "Halo, Dunia!" program di java:
 
-publicclassHelloPrinter
-
-{
-
-publicstaticvoidmain(String[]args)
-
-{
-
-System.out.println("Hello,World!");
-
+```java
+public class HelloPrinter {
+	public static void main(String[]args)
+	{
+		System.out.println("Hello,World!");
+	}
 }
 
-}
+```
+We will examine this program in the next section. 
 
 Kami akan memeriksa program ini di bagian selanjutnya.
 
+No matter which programming environment you use, you begin your activity by 
+typing the program statements into an editor window. 
+
 Apa pun lingkungan pemrograman yang Anda gunakan, Anda memulai aktivitas Anda dengan mengetikkan pernyataan program ke dalam jendela editor.
+
+Create a new file and call it HelloPrinter.java, using the steps that are appropriate 
+for your environment. (If your environment requires that you supply a project name 
+in addition to the file name, use the name hello for the project.) Enter the program 
+instructions exactly as they are given above. Alternatively, locate the electronic copy 
+in this book’s companion code and paste it into your editor.
 
 Buat file baru dan beri namaHelloPrinter.java, menggunakan langkah-langkah yang sesuai untuk lingkungan Anda. (Jika lingkungan Anda mengharuskan Anda memberikan nama proyek selain nama file, gunakan namahello untuk proyek tersebut.) Masukkan instruksi program persis seperti yang diberikan di atas. Atau, temukan salinan elektronik dalam kode pendamping buku ini dan tempelkan ke editor Anda.
 
+![Gambar](foto/figure5.png)
+
+As you write this program, pay careful attention to the various symbols, and keep 
+in mind that Java is case sensitive. You must enter upper- and lowercase letters exactly 
+as they appear in the program listing. You cannot type MAIN or PrintLn. If you are not 
+careful, you will run into problems—see Common Error 1.2 on page 15.
+
 Saat Anda menulis program ini, perhatikan baik-baik berbagai simbol, dan ingatlah bahwa Java sensitif terhadap huruf besar-kecil. Anda harus memasukkan huruf besar dan kecil persis seperti yang muncul dalam daftar program. Anda tidak dapat mengetikMAIN atauPrintLn. Jika Anda tidak hati-hati, Anda akan mengalami masalah—lihat Kesalahan Umum 1.2.
 
-Langkah 3 Jalankan programnya.
+**Step 3** Run the program
+
+**Langkah 3** Jalankan programnya.
+
+The process for running a program depends greatly on your programming environment. You may have to click a button or enter some commands. When you run the 
+test program, the message
 
 Proses untuk menjalankan program sangat bergantung pada lingkungan pemrograman Anda. Anda mungkin harus mengklik tombol atau memasukkan beberapa perintah. Saat Anda menjalankan program pengujian, pesannya.
 
 Hello,World!
 
+will appear somewhere on the screen (see Figures 4 and 5).
+
 akan muncul di suatu tempat di layar (lihat Gambar 4 dan Gambar 5).
+
+In order to run your program, the Java compiler translates your source files (that 
+is, the statements that you wrote) into class files. (A class file contains instructions for 
+the Java virtual machine.) After the compiler has translated your source code into 
+virtual machine instructions, the virtual machine executes them. During execution, 
+the virtual machine accesses a library of pre-written code, including the implementations of the System and PrintStream classes that are necessary for displaying the program’s output. Figure 6 summarizes the process of creating and running a Java program. In some programming environments, the compiler and virtual machine are 
+essentially invisible to the programmer—they are automatically executed whenever 
+you ask to run a Java program. In other environments, you need to launch the compiler and virtual machine explicitly. 
 
 Untuk menjalankan program Anda, kompiler Java menerjemahkan file sumber Anda (yaitu, pernyataan yang Anda tulis) ke dalam file kelas. (Sebuah file kelas berisi instruksi untuk mesin virtual Java.) Setelah kompilator menerjemahkan kode sumber Anda ke dalam instruksi mesin virtual, mesin virtual akan mengeksekusinya. Selama eksekusi, mesin virtual mengakses pustaka kode yang telah ditulis sebelumnya, termasuk implementasi kelasSystem danPrintStream yang diperlukan untuk menampilkan keluaran program. Gambar 6 merangkum proses membuat dan menjalankan program Java. Di beberapa lingkungan pemrograman, kompilator dan mesin virtual pada dasarnya tidak terlihat oleh pemrogram—mereka dijalankan secara otomatis setiap kali Anda meminta untuk menjalankan program Java. Di lingkungan lain, Anda perlu meluncurkan kompiler dan mesin virtual secara eksplisit.
 
-Langkah 4 Rapikan pekerjaanmu.
+**Step 4** Organize your work
+
+**Langkah 4** Rapikan pekerjaanmu.
+
+![Gambar](foto/figure6.png)
+
+As a programmer, you write programs, try them out, and improve them. You store 
+your programs in files. Files are stored in folders or directories. A folder can contain files as well as other folders, which themselves can contain more files and folders (see 
+Figure 7). This hierarchy can be quite large, and you need not be concerned with all of 
+its branches. However, you should create folders for organizing your work. It is a 
+good idea to make a separate folder for your programming coursework. Inside that 
+folder, make a separate folder for each program.
 
 Sebagai seorang programmer, Anda menulis program, mencobanya, dan memperbaikinya. Anda menyimpan program Anda dalam file. File disimpan dalam folder atau direktori. Sebuah folder dapat berisi file serta folder lain, yang dengan sendirinya dapat berisi lebih banyak file dan folder 
-(lihat Gambar 7). Hirarki ini bisa sangat besar, dan Anda tidak perlu khawatir dengan semua cabangnya. Namun, Anda harus membuat folder untuk mengatur pekerjaan Anda. Sebaiknya buat folder terpisah untuk pro-tugas mata kuliah tata bahasa. Di dalam folder itu, buat folder terpisah untuk setiap program.Beberapa lingkungan pemrograman menempatkan program Anda ke lokasi default jika Anda tidak menentukan folder sendiri. Dalam hal ini, Anda perlu mencari tahu di mana file-file itu berada.Pastikan Anda memahami di mana file Anda berada dalam hierarki folder. Informasi ini penting ketika Anda mengirimkan file untuk penilaian, danuntukmembuat salinan cadangan (lihat Tip Pemrograman 1.1).
+(lihat Gambar 7). Hirarki ini bisa sangat besar, dan Anda tidak perlu khawatir dengan semua cabangnya. Namun, Anda harus membuat folder untuk mengatur pekerjaan Anda. Sebaiknya buat folder terpisah untuk pro-tugas mata kuliah tata bahasa. Di dalam folder itu, buat folder terpisah untuk setiap program.
+
+Some programming environments place your programs into a default location if 
+you don’t specify a folder yourself. In that case, you need to find out where those files 
+are located. 
+
+Beberapa lingkungan pemrograman menempatkan program Anda ke lokasi default jika Anda tidak menentukan folder sendiri. 
+
+Be sure that you understand where your files are located in the folder hierarchy. 
+This information is essential when you submit files for grading, and for making 
+backup copies (see Programming Tip 1.1).
+
+Dalam hal ini, Anda perlu mencari tahu di mana file-file itu berada.Pastikan Anda memahami di mana file Anda berada dalam hierarki folder. Informasi ini penting ketika Anda mengirimkan file untuk penilaian, danuntukmembuat salinan cadangan (lihat Tip Pemrograman 1.1).
 
 **Tip Pemrograman 1.1**
 
@@ -154,7 +430,11 @@ Berikut adalah beberapa petunjuk yang perlu diingat:
 
 ### **1.5 Menganalisis Program Pertama Anda**
 
-Pada bagianini, kita akan menganalisis program Java pertama secara rinci. Di sini adalah kode sumber.
+----
+
+Pada bagian ini, kita akan menganalisis program Java pertama secara rinci. Di sini adalah kode sumber.
+
+![Gambar](foto/section5.png)
 
 Garis
 	public class Hello Printer
@@ -166,12 +446,14 @@ Kata publik menunjukkan bahwa kelas dapat digunakan oleh "publik". Anda kemudian
 
 Di Java, setiap file sumber dapat berisi paling banyak satu kelas publik, dan nama kelas publik harus sesuai dengan nama file yang berisi kelas tersebut. Misalnya, kelas HelloPrinter harus dimuat dalam file bernama HelloPrinter.java. Konstruksi
 
+```java
 public static void main(String[] args) 
 { 
 
 . . . 
 
 }
+```
 
 mendeklarasikan metode yang disebut main. Metode berisi kumpulan instruksi pemrograman yang menjelaskan bagaimaname lakukan tugas tertentu.
 
@@ -179,21 +461,21 @@ Setiap aplikasi Java harus memiliki metode utama. Sebagian besar program Java be
 
 Istilah statis dijelaskan secara lebih rinci dalam Bab 8, dan arti dari String[ ] args dibahas dalam Bab 11. Pada saat ini, cukup pertimbangkan
 
+```java
 public class ClassName
 { 
-
-public static void main(String[] args) 
-{ 
-
+	public static void main(String[] args) 
+	{ 
 . . . 
-
+	} 
 } 
-
-} 
+```
 
 sebagai bagian dari "pipa" yang diperlukan untuk membuat program Java. Program pertama kami memiliki semua instruksi di dalam metode utama kelas.
 
 Metode utama berisi satu atau lebih instruksi yang disebut pernyataan. Setiap pernyataan diakhiri dengan titik koma (;). Ketika sebuah program dijalankan, pernyataan dalam metode utama dieksekusi satu per satu.
+
+![Gambar](foto/syntax1.1.png)
 
 Dalam program contoh kami, metode utama memiliki satu pernyataan:
 
@@ -244,11 +526,13 @@ System.out.println(3 + 4);
 
 adalah garis tunggal
 
+007
+
 CONTOH KODE Lihat sec05 dari eText atau kode pendamping untuk program yang mendemonstrasikan perintah cetak.
 
-Kesalahan Umum 1.1
+#### **Kesalahan Umum 1.1**
 
-Menghilangkan Titik Koma
+**Menghilangkan Titik Koma**
 
 Di Java setiap pernyataan harus diakhiri dengan titik koma. Lupa mengetik titik koma adalah kesalahan umum. Ini membingungkan kompiler, karena kompiler menggunakan titik koma untuk menemukan di mana satu pernyataan berakhir dan yang berikutnya dimulai. Kompilator tidak menggunakan jeda baris atau kurung kurawal untuk mengenali akhir pernyataan. Misalnya, kompiler menganggap
 
@@ -268,11 +552,15 @@ Obatnya sederhana. Pindai setiap pernyataan untuk mencari titik koma, sama seper
 
 ### **1.6 Kesalahan**
 
+----
+
 Bereksperimenlah sedikit dengan program HelloPrinter. Apa yang terjadi jika Anda membuat kesalahan pengetikan seperti
 
 System.ou.println("Hello, World!");
 
 System.out.println("Hello, Word!");
+
+![Gambar](foto/error1.6.png)
 
 Dalam kasus pertama, kompiler akan mengeluh. Ini akan mengatakan bahwa ia tidak tahu apa yang Anda maksud dengan ou. Kata-kata yang tepat dari pesan kesalahan tergantung pada lingkungan pengembangan Anda, tetapi mungkin seperti "Tidak dapat menemukan simbol ou". Ini adalah kesalahan waktu kompilasi. Ada yang salah menurut aturan bahasa dan kompiler menemukannya. Untuk alasan ini, kesalahan waktu kompilasi sering disebut kesalahan sintaksis. Ketika kompilator menemukan satu atau lebih kesalahan, ia menolak untuk menerjemahkan program ke dalam instruksi mesin virtual Java, dan sebagai konsekuensinya Anda tidak memiliki program yang dapat dijalankan. Anda harus memperbaiki kesalahan dan mengkompilasi lagi. Faktanya, kompilator cukup pilih-pilih, dan adalah umum untuk melewati beberapa putaran memperbaiki kesalahan waktu kompilasi sebelum kompilasi berhasil untuk pertama kalinya.
 
@@ -298,23 +586,22 @@ Kesalahan run-time lebih merepotkan. Kompilator tidak akan menemukannya—sebena
 
 CONTOH KODE Lihat sec06 dari eText atau kode pendamping untuk tiga program yang menggambarkan kesalahan.
 
-**Kesalahan Umum 1.2**
+#### **Kesalahan Umum 1.2**
 
-Kata-kata yang salah eja
+**Kata-kata yang salah eja**
 
 Jika Anda secara tidak sengaja salah mengeja kata, maka hal-hal aneh mungkin terjadi, dan mungkin tidak selalu jelas dari pesan kesalahan apa yang salah. Berikut adalah contoh yang baik tentang bagaimana kesalahan ejaan sederhana dapat menyebabkan masalah:
 
+```java
 public class HelloPrinter 
 { 
-
-public static void Main(String[] args) 
-{ 
-
-System.out.println("Hello, World!");
-
-} 
+	public static void Main(String[] args) 
+	{ 
+		System.out.println("Hello, World!");
+	} 
 
 }
+```
 
 Kelas ini mendeklarasikan sebuah metode yang disebut Main. Kompiler tidak akan menganggap ini sama dengan metode utama, karena Main dimulai dengan huruf besar dan bahasa Java peka huruf besar/kecil. Huruf besar dan kecil dianggap benar-benar berbeda satu sama lain, dan bagi kompiler Main tidak lebih cocok untuk main daripada hujan. Kompiler akan dengan senang hati mengkompilasi metode Main Anda, tetapi ketika mesin virtual Java membaca file yang dikompilasi, ia akan mengeluh tentang metode utama yang hilang dan menolak untuk menjalankan program. Tentu saja, pesan "metode utama yang hilang" akan memberi Anda petunjuk di mana mencari kesalahan.
 
@@ -322,9 +609,15 @@ Jika Anda mendapatkan pesan kesalahan yang tampaknya menunjukkan bahwa kompiler 
 
 ### **1.7 Pemecahan Masalah: Desain Algoritma**
 
+----
+
 Anda akan segera belajar bagaimana memprogram perhitungan dan pengambilan keputusan di Java. Tetapi sebelum kita melihat mekanisme penerapan perhitungan di bab berikutnya, mari kita pertimbangkan bagaimana Anda dapat menjelaskan langkah-langkah yang diperlukan untuk menemukan solusi dari suatu masalah.
 
 #### **1.7.1 Konsep Algoritma**
+
+----
+
+![Gambar](foto/foto1.7.1.png)
 
 Anda mungkin telah menemukan iklan yang mendorong Anda untuk membayar layanan terkomputerisasi mencocokkan Anda dengan pasangan cinta. Memikirkan bagaimana ini bisa berhasil. Anda mengisi formulir dan kirimkan. Yang lain melakukan hal yang sama. Data diproses oleh program komputer. Apakah masuk akal untuk asumsikan bahwa komputer dapat melakukan tugasmenemukan pasangan terbaik untuk Anda? Misalkan Anda adik laki-laki, bukan komputer, memiliki semua formulir di mejanya. Instruksi apa yang bisa Anda berikan? memberinya? Anda tidak bisa mengatakan, “Temukan yang paling tampan orang yang suka inline skating dan browsing internet”. Tidak ada standar objektif untuk ketampanan, dan pendapat saudaramu (atau itu program komputer yang menganalisis foto calon mitra) kemungkinan akan berbeda dari milik Anda. Jika Anda tidak dapat memberikan instruksi tertulis kepada seseorang untuk menyelesaikannya masalah, tidak mungkin komputer secara ajaib dapat menemukan solusi yang tepat. Itu komputer hanya dapat melakukan apa yang Anda perintahkan. Itu hanya melakukannya lebih cepat, tanpa mendapatkan bosan atau lelah.
 
@@ -339,9 +632,13 @@ jawaban, itu harus mengikuti urutan langkah-langkah yang
 
 Urutan langkah tidak ambigu ketika ada instruksi yang tepat tentang apa yang harus dilakukan pada setiap langkah dan kemana harus pergi selanjutnya. Tidak ada ruang untuk menebak atau pendapat pribadi. Sebuah langkah dapat dieksekusi ketika itu dapat dilaksanakan dalam praktek. Misalnya, komputer dapat mencantumkan semua orang yang memiliki hobi yang sama dengan Anda, tapi itu tidak bisa memprediksi siapa yang akan menjadi pasangan seumur hidup Anda. Akhirnya, urutan langkah berakhir jika pada akhirnya akan berakhir. Sebuah program yang terus bekerja tanpa memberikan jawaban adalah jelas tidak berguna.
 
+![Gambar](foto/foto1.7.1-2.png)
+
 Urutan langkah yang tidak ambigu, dapat dieksekusi, dan diakhiri disebut algoritma. Meskipun tidak ada algoritme untuk menemukan pasangan, banyak masalah memiliki algoritme untuk diselesaikan mereka. Bagian berikutnya memberikan contoh. 
 
 #### **1.7.2 Algoritma untuk Memecahkan Masalah Investasi**
+
+----
 
 Pertimbangkan masalah investasi berikut:
 
@@ -349,11 +646,15 @@ Anda memasukkan $10.000 ke dalam rekening bank yang menghasilkan bunga 5 persen 
 
 Bisakah Anda memecahkan masalah ini dengan tangan? Tentu, Anda bisa. Anda mengetahui keseimbangannya sebagai berikut:
 
+![Gambar](foto/tabel11.png)
+
 Anda terus berjalan sampai saldo setidaknya $20.000. Kemudian angka terakhir di tahun inikolom adalah jawabannya.
 
 Tentu saja, melakukan perhitungan ini sangat membosankan bagi Anda atau adik laki-laki Anda. Tetapi komputer sangat pandai melakukan perhitungan berulang dengan cepat dan tanpa cacat. Yang penting bagi komputer adalah deskripsi langkah-langkah untuk menemukan solusi. Setiap langkah harus jelas dan tidak ambigu, tidak memerlukan tebak-tebakan. Berikut adalah deskripsi seperti itu:
 
 Setel tahun ke 0, saldo ke 10.000.
+
+![Gambar](foto/tabel12.png)
 
 Ketika saldo kurang dari $20,000
 
@@ -363,11 +664,15 @@ Tetapkan bunga ke saldo x 0,05 (yaitu, bunga 5 persen).
 
 Tambahkan bunga ke saldo
 
+![Gambar](foto/tabel13.png)
+
 Laporan tahun sebagai jawabannya.
 
 Langkah-langkah ini termasuk dalam bahasa yang belum dapat dipahami oleh komputer, tapi kamu akan segera belajar bagaimana merumuskannya dalam Java. Deskripsi ini disebut dengan pseudocode. Kami membahas aturan untuk menulis pseudocode di bagian selanjutnya.
 
 #### **1.7.3 Pseudocode**
+
+----
 
 Tidak ada persyaratan ketat untuk pseudocode karena dibaca oleh manusia,bukan program komputer. Berikut adalah jenis-jenis pernyataan pseudocode dan bagaimana kita akan menggunakan penerapannya dalam buku ini:
 
@@ -392,6 +697,8 @@ Laporkan tahun sebagai jawabannya.
 
 #### **1.7.4 Dari Algoritma ke Program**
 
+----
+
 Di Bagian 1.7.2, kami mengembangkan pseudocode untuk menemukan berapa lama waktu yang dibutuhkan untuk menggandakan investasi. Mari kita periksa kembali bahwa pseudocode mewakili suatu algoritma itu . adalah bahwa pseudocode itu jelas, dapat dieksekusi, dan diakhiri.
 
 Pseudocode kami jelas. Ini hanya memberi tahu cara memperbarui nilai di setiap langkah. Pseudocode dapat dieksekusi karena kami menggunakan tingkat bunga tetap. Apakah kami mengatakan untuk menggunakan tingkat bunga aktual yang akan dibebankan di tahun-tahun mendatang, dan bukan tingkat bunga tetap 5 persen per tahun, instruksi tidak akan dapat dieksekusi. Tidak ada jalan bagi siapa pun untuk mengetahui berapa tingkat bunga di masa depan. Ini membutuhkan sedikit berpikir untuk melihat bahwa langkah-langkahnya berakhir: Dengan setiap langkah, keseimbangan naik setidaknya $ 500, jadi akhirnya harus mencapai $ 20.000.
@@ -403,6 +710,8 @@ Oleh karena itu, kami telah menemukan algoritme untuk menyelesaikan masalah inve
 Ini adalah yang pertama dari banyak cara bagian dalam buku ini yang memberikan Anda langkah-demi-langkah prosedur untuk melaksanakan tugas-tugas penting dalam mengembangkan program komputer.
 
 Sebelum Anda siap untuk menulis sebuah program di Java, Anda perlu mengembangkan metode algorithma untuk tiba di solusi untuk masalah tertentu menggambarkan algoritma di pseudocode urutan langkah-langkah yang tepat dirumuskan dalam bahasa Inggris untuk menggambarkan, kami akan merancang sebuah algoritma untuk masalah ini:
+
+![Gambar](foto/ps.png)
 
 **Pernyataan masalah** Anda memiliki pilihan untuk membeli salah satu dari dua mobil. Satu lebih hemat bahan bakar daripada yang lain, tetapi juga lebih mahal. 
 Anda tahu harga dan efisiensi bahan bakar (dalam mil per galon, mpg) dari kedua mobil. Anda berencana untuk menyimpan mobil selama sepuluh tahun. Asumsikan harga $4 per galon gas dan penggunaan 15.000 mil per tahun. Anda akan membayar tunai untuk mobil dan tidak khawatir tentang biaya pembiayaan. Mobil mana yang lebih baik?
@@ -481,23 +790,23 @@ Contoh Kerja berikut menunjukkan bagaimana menggunakan konsep-konsep dalam bab i
 
 Di bab-bab selanjutnya, contoh yang dikerjakan ditunjukkan dengan deskripsi singkat tentang masalah yang ditangani dalam contoh, ditambah pengingat untuk melihatnya di eTeks Anda atau mengunduhnya dari situs web pendamping buku di www.wiley.com/go/bjeo7. Anda akan menemukan kode apa pun yang terkait dengan Contoh yang Dikerjakan yang disertakan dengan kode pendamping buku untuk bab ini. Saat Anda melihat deskripsi Contoh yang Dikerjakan, buka contoh dan lihat dan jalankan kode untuk mempelajari bagaimana masalah tersebut diselesaikan.
 
-**CONTOH YANG BERHASIL 1.1**
+**CONTOH YANG BERHASIL 1.1 Menulis Sebuah Algoritma untuk Memasang Ubin Lantai**
 
-**Menulis Sebuah Algoritma untuk Memasang Ubin Lantai**
+![Gambar](foto/we.png)
 
 **Rumusan Masalah** Tulis sebuah algoritma untuk memasang ubin lantai kamar mandi persegi panjang dengan ubin hitam putih berselang-seling berukuran 4×4 inci. Dimensi lantai, diukur dalam inci, dengan kelipatan 4.
 
-Step 1 Tentukan input dan outputnya.
+**Step 1** Tentukan input dan outputnya.
 
 Inputnya merupakan dimensi lantai (panjang × lebar), diukur dengan inci. Outputnya merupakan lantai keramik.
 
-Step 2 Pecah masalah ke dalam tugas-tugas kecil.
+**Step 2** Pecah masalah ke dalam tugas-tugas kecil.
 
 Subtugas natural yaitu membuat satu baris ubin. Jika kamu bisa selesaikan tugas itu, maka kamu dapat menyelesaikan masalah dengan membuat satu baris di samping yang lain, mulai dari dinding, hingga kamu mencapai dinding yang berlawanan.
 
 Bagaimana cara membuat baris tersebut? Mulailah dengan ubin di satu dinding. Jika tersebut berwarna putih, letakkan yang hitam di sebelahnya. Jika berwarna hitam, taruh ubin putih di sebelahnya. Terus lakukan hal tersebut hingga kamu mencapai dinding yang berlawanan. Baris akan berisi lebar / 4 ubin.
 
-Step 3 Jelaskan setiap tugas ke dalam pseudocode (kodesemu).
+**Step 3** Jelaskan setiap tugas ke dalam pseudocode (kodesemu).
 
 Dalam kodesemu, kamu ingin lebih tepat tentang di mana tepatnya ubin ditempatkan.
 
@@ -507,25 +816,39 @@ Tempatkan ubin di sebelah timur ubin yang ditempatkan sebelumnya. Jika ubin yang
 Kembali pada ubin di awal baris yang baru saja kamu tempatkan. Jika ada
 ruang di selatan, letakkan ubin dengan warna yang berlawanan di bawahnya.
 
-Step 4 Uji kodesemu dengan mengerjakan suatu masalah.
+**Step 4** Uji kodesemu dengan mengerjakan suatu masalah.
 
 Misalkan kamu ingin memasang ubin di area berukuran 20 × 12 inci. Langkah pertama adalah menempatkan ubin hitam di sudut barat laut.
 
+![Gambar](foto/step4-1.png)
+
 Selanjutnya, tempatkan empat ubin secara bergantian hingga mencapai dinding timur. (lebar / 4 – 1 = 20 / 4 – 1 = 4).
+
+![Gambar](foto/step4-2.png)
 
 Ada ruang di selatan. Kembali pada ubin di awal baris yang sudah selesai. Warnanya hitam. Tempatkan ubin putih di sebelah selatannya.
 
+![Gambar](foto/step4-3.png)
+
 Lengkapi baris.
+
+![Gambar](foto/step4-4.png)
 
 Masih ada ruang di selatan. Kembali pada ubin di awal baris yang sudah selesai. Warnanya putih. Tempatkan ubin hitam di selatannya.
 
+![Gambar](foto/step4-5.png)
+
 Lengkapi baris.
+
+![Gambar](foto/step4-6.png)
 
 Sekarang seluruh lantai terisi dan selesai.
 
 ### **RINGKASAN BAB**
 
 **Mendefinisikan "program komputer" dan pemrograman**
+
+----
 
 • Komputer menjalankan instruksi yang sangat mendasar secara berurutan.
 
@@ -539,7 +862,16 @@ Sekarang seluruh lantai terisi dan selesai.
 
 **Penjelasan komponen-komponen komputer**
 
+----
+
+• Unit pemrosesan pusat (CPU) melakukan kontrol program dan data
+pengolahan.
+
+• Perangkat penyimpanan termasuk memori dan penyimpanan sekunder.
+
 **Penjelasan proses penerjemahan bahasa tingkat tinggi ke kode mesin**
+
+----
 
 • Java awalnya dirancang untuk memprogram perangkat konsumen, tetapi pertama kali berhasil digunakan untuk menulis applet internet.
 
@@ -550,6 +882,8 @@ Sekarang seluruh lantai terisi dan selesai.
 • Java memiliki perpustakaan yang sangat besar, fokuslah untuk mempelajari bagian- bagian perpustakaan yang Anda butuhkan untuk proyek pemrograman Anda.
 
 **Menjadi akrab dengan lingkungan pemrograman java Anda**
+
+----
 
 • Luangkan waktu untuk membiasakan diri dengan lingkungan pemrograman yang akan Anda gunakan untuk tugas kelas Anda.
 
@@ -563,6 +897,8 @@ Sekarang seluruh lantai terisi dan selesai.
 
 **Menggambarkan blok bangunan dari program sederhana**
 
+----
+
 • Kelas adalah blok bangunan dasar dari program java.
 
 • Setiap aplikasi java berisi kelas dengan metode utama, ketika bintang aplikasi, instruksi dalam metode utama dijalankan.
@@ -575,11 +911,15 @@ Sekarang seluruh lantai terisi dan selesai.
 
 **Mengklasifikasikan kesalahan program sebagai kompilasi - kesalahan waktu dan waktu berjalan**
 
+----
+
 • Kesalahan waktu kompilasi adalah pelanggaran aturan bahasa pemrograman yang dideteksi oleh kompiler.
 
 • Kesalahan run waktu berjalan menyebabkan program mengambil tindakan yang tidak diinginkan oleh programmer.
 
 **Tulis kode semu untuk algoritma sederhana**
+
+----
 
 • Algoritma untuk memecahkan masalah adalah urutan langkah yang jelas dapat dieksekusi dan diakhiri.
 
@@ -589,73 +929,70 @@ Sekarang seluruh lantai terisi dan selesai.
 
 java.io.PrintStream	
 
-java.lang.System print out println
+java.lang.System 
+
+print out 
+
+println
 
 **TINJAUAN LATIHAN**
 
 
-■	R1.1 Menjelaskan perbedaan antara menggunakan program komputer dan memprogram komputer.
+■ R1.1 Menjelaskan perbedaan antara menggunakan program komputer dan memprogram komputer.
 
-■	R1.2 Bagian komputer mana yang dapat menyimpan kode program? Yang dapat menyimpan data pengguna
+■ R1.2 Bagian komputer mana yang dapat menyimpan kode program? Yang dapat menyimpan data pengguna
 
-■	R1.3 Bagian mana dari komputer yang berfungsi untuk memberikan informasi kepada pengguna? Bagian mana yang menerima input pengguna?
+■ R1.3 Bagian mana dari komputer yang berfungsi untuk memberikan informasi kepada pengguna? Bagian mana yang menerima input pengguna?
 
-■	■ R1.4 Pemanggang roti adalah perangkat fungsi tunggal, tetapi komputer dapat diprogram untuk melakukan tugas yang berbeda. Apakah ponsel Anda perangkat fungsi tunggal, atau komputer yang dapat diprogram? (Jawaban Anda akan tergantung pada model ponsel Anda.)
+■ ■ R1.4 Pemanggang roti adalah perangkat fungsi tunggal, tetapi komputer dapat diprogram untuk melakukan tugas yang berbeda. Apakah ponsel Anda perangkat fungsi tunggal, atau komputer yang dapat diprogram? (Jawaban Anda akan tergantung pada model ponsel Anda.)
 
-■	■ R1.5 Jelakan dua manfaat menggunakan Java daripada kode mesin.
+■ ■ R1.5 Jelakan dua manfaat menggunakan Java daripada kode mesin.
 
 ■ ■ R1.6 Di komputer Anda sendir atau di komputer lab, temukan lokasi yang tepat (nama folder atau direktori) dari
 
-a.	Contoh file HelloPrinter. java, yang Anda tulis dengan editor.
+a. Contoh file HelloPrinter. java, yang Anda tulis dengan editor.
 
-b.	Program peluncur java.exe atau java.
+b. Program peluncur java.exe atau java.
 
-c.	File library rt.jar yang berisi library/perpustakaan run-time.
+c. File library rt.jar yang berisi library/perpustakaan run-time.
 
 ■ ■ R 1.7 Apa yang dicetak oleh program ini?
+
+```java
 public class Test
 {
-
-public static void main(String[] args)
-{
-
-System.out.println("39 + 3");
-
-System.out.println(39 + 3);
-
+	public static void main(String[] args)
+	{
+		System.out.println("39 + 3");
+		System.out.println(39 + 3);
+	}
 }
+```
 
-}
 ■ ■ R 1.8 Apa yang dicetak oleh program ini? Perhatikan baik-baik spasi.
 
+```java
 public class Test
 {
-
-public static void main(String[] args)
-{
-
-System.out.print("Hello"); 
-
-System.out.println("World");
-
+	public static void main(String[] args)
+	{
+		System.out.print("Hello"); 
+		System.out.println("World");
+	}
 }
-
-}
+```
 
 ■ ■ R1.9 Apa kesalahan compile-time pada program ini?
 
+```java
 public class Test
 {
-
-public static void main(String[] args)
-{
-
-System.out. println("Hello", "World!");
+	public static void main(String[] args)
+	{
+		System.out. println("Hello", "World!");
+	}
 }
-
-}
-
-}
+```
 
 ■ ■ R1.10 Tulis tiga versi dari HelloPrinter.java Program yang memiliki kesahalan
 compile• time yang berbeda. Tulis versi yang memiliki kesalahan run-time.
@@ -692,6 +1029,8 @@ E1.5 Tulis program yang menampilkan nama Anda di dalam kotak di layar, seperti i
 
 E1.6 Tulis program yang mencetak nama Anda dalam huruf besar, seperti
 
+![Gambar](foto/E1.6.png)
+
 E1.7 Tulislah program yang mencetak nama Anda dalam kode Morse, seperti ini:
 
  .... .- .-. .-. -.- -
@@ -700,11 +1039,17 @@ Gunakan panggilan terpisah ke System.out.print untuk setiap huruf.
 
 E1.8 Tulis program yang mencetak wajah yang mirip dengan (tetapi berbeda dari) berikut ini:
 
+![Gambar](foto/E1.8.png)
+
 E1.9 Tulis program yang mencetak tiruan lukisan Piet Mondrian. (Cari di Internet jika Anda tidak mengenal lukisannya.) Gunakan urutan karakter seperti @@@ atau ::: untuk menunjukkan warna yang berbeda, dan gunakan - dan | untuk membentuk garis.
 
 E1.10 Buatlah program untuk mencetak sebuah rumah yang bentuknya persis seperti berikut ini:
+
+![Gambar](foto/E1.10.png)
 	 
-E1.11 Buatlah program yang mencetak hewan yang mengucapkan salam, mirip dengan (tetapi berbeda dari) berikut ini
+E1.11 Buatlah program yang mencetak hewan yang mengucapkan salam, mirip dengan (tetapi berbeda dari) berikut ini :
+
+![Gambar](foto/E1.11.png)
 	 
 E1.12 Tulis program yang mencetaktiga item, seperti nama tiga sahabat atau film favorit Anda, pada tiga baris terpisah.
 
@@ -714,39 +1059,31 @@ E1.14 Tulis program yang mencetak bendera Amerika Serikat, menggunakan karakter 
 
 E1.15 Ketik dan jalankan program berikut. Kemudian ubah untuk menampilkan pesan “Hello, your name!”. 
 
+```java
 import javax.swing.JOptionPane; 
 
-public class DialogViewer
-{ 
-
-public static void main(String[] args) 
-{
-
-JOptionPane.showMessageDialog(null, "Hello, World!")
-
+public class DialogViewer { 
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "Hello, World!")
+	}
 }
 
-}
+```
 
 E1.16	Ketik dan jalankan program berikut. Kemudian ubah untuk mencetak "Halo, nama!", Menampilkan nama yang diketik pengguna.
 
+```java
 import javax.swing.JOptionPane;
 
-public class DialogViewer
-{
-
-public static void main(String[] args) 
-{ 
-
-String name = JOptionPane.
-
-showInputDialog("What is your name?");  
-
-System.out.println(name);
-
+public class DialogViewer{
+public static void main(String[] args) { 
+	String name = JOptionPane.
+	showInputDialog("What is your name?");  
+	System.out.println(name);
+	}
 }
 
-}
+```
 
 E1.17	Ubah program dari Latihan •• E1.16 sehingga dialog berlanjut dengan pesan “Nama saya Hal! Apa yang bisa saya kerjakan?" Buang input pengguna dan tampilkan pesan seperti
 Maafkan aku, Dave. Aku taku taku tidak bisa melakukanitu.
@@ -756,30 +1093,22 @@ E1.18	Ketik dan jalankan program berikut.
 
 Kemudian ubah untuk menampilkan sapaan dan gambar yang berbeda.
 
+```java
 import java.net.URL; 
 
 import javax.swing.ImageIcon; 
 
 import javax.swing.JOptionPane;
 
-public class Test
-
-{ 
-
-public static void main(String[] args) throws Exception 
-{ 
-
-URL imageLocation =newURL (  
-	"http://horstmann.com/java4everyone/duke.gif");
-
-JOptionPane.showMessageDialog(null, "Hello", "Title",
-
-JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
-
+public class Test { 
+	public static void main(String[] args) throws Exception { 
+		URL imageLocation =newURL ("http://horstmann.com/java4everyone/duke.gif");
+		JOptionPane.showMessageDialog(null, "Hello", "Title",
+		JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
+	}
 }
 
-}
-
+```
 Bisnis E1.19 Tulis program yang mencetak daftar dua kolom ulang tahun teman Anda. Di kolom pertama, cetak nama-nama sahabatmu; di kedua, cetak ulang tahun mereka.
  
 Bisnis E1.20 Di Amerika Serikat tidak ada pajak penjualan federal, jadi setiap negara bagian dapat mengenakan pajak penjualannya sendiri. Cari di Internet untuk pajak penjualan yang dikenakan di lima negara bagian AS, lalu tulis program yang mencetak tarif pajak untuk lima negara bagian pilihan Anda.
@@ -802,11 +1131,15 @@ Bisnis P1.4	Bayangkan Anda dan sejumlah teman pergi ke restoran mewah, dan ketik
 
 P1.5	Tulis algoritma untuk membuat pola ubin yang terdiri dari hitam dan ubin putih, dengan pinggiran ubin hitam di sekelilingnya dan dua atau tiga ubin hitam di tengah, berjarak sama dari ary terikat. Input ke algoritme Anda adalah jumlah total baris dan kolom dalam pola. 
 
+![Gambar](foto/p15.png)
+
 P1.6	Tulis algoritma yang memungkinkan robot untuk memotong rumput persegi panjang, asalkan ditempatkan di sudut seperti ini:                                                                      Robot (ditandai sebagai R) dapat:
 
 - Maju satu unit.
 - Belok kiri atau kanan.
 - Rasakan warna tanah satu unit di depannya.
+
+![Gambar](foto/p16.png)
 
 P1.7 Pertimbangkan sebuah robot yang ditempatkan di sebuah ruangan. 
 
@@ -818,11 +1151,15 @@ Robotnya bisa:
 
 Tulis algoritma yang memungkinkan robot, ditempatkan di mana saja di dalam ruangan, untuk menghitung jumlah jendela. Untuk contoh, di ruangan di sebelah kanan, robot (ditandai sebagai R) harus menemukan bahwa ia memiliki dua jendela.
 
+![Gambar](foto/p17.png)
+
 P1.8 Perhatikan sebuah robot yang ditempatkan di dalam labirin. Aturan tangan kanan memberi tahu Anda caranya untuk melarikan diri dari labirin: Selalu memiliki tangan kanan di samping dinding, dan akhirnya Anda akan menemukan jalan keluar. Robotnya bisa:
 
 - Maju satu unit.
 - Belok kiri atau kanan.
 - Rasakan apa yang ada di depannya: tembok, jalan keluar, atau bukan keduanya.
+
+![Gambar](foto/p18.png)
 
 Tulis algoritme yang memungkinkan robot keluar dari labirin. Anda mungkin berasumsi bahwa ada jalan keluar yang dapat dicapai oleh aturan tangan kanan. Tantangan Anda adalah menghadapi situasi di yang jalannya berbelok. Robot tidak bisa melihat belokan. Itu hanya bisa melihat apa yang ada di depannya.
 
@@ -830,7 +1167,11 @@ Bisnis P1.9 Misalkan Anda menerima promosi loyalitas yang memungkinkan Anda memb
 
 Sains P1.10	 Sebuah produsen televisi mengiklankan bahwa satu set televisi memiliki ukuran tertentu, diukur secara diagonal. Anda bertanya-tanya bagaimana set akan masuk ke ruang tamu Anda. Tulislah algoritma yang menghasilkan garis horizontal dan ukuran vertikal televisi. Masukan Anda adalah ukuran diagonal dan rasio aspek (rasio lebar tinggi, biasanya 16 : 9 untuk pesawat televisi). 
 
+![Gambar](foto/p110.png)
+
 Sains P1.11	 Kamera saat ini dapat memperbaiki masalah “mata merah” disebabkan saat foto flash membuat mata terlihat merah.Tulis pseudocode untuk algoritma yang dapat mendeteksi mata merah. Masukan Anda adalah sebuah pola warna, seperti yang di sebelah kanan.
+
+![Gambar](foto/p111.png)
 
 Anda diberi jumlah baris dan kolom. Untuk nomor baris atau kolom apa pun, Anda dapat menanyakan warna, yang akan menjadi merah, hitam, atau yang lainnya. Jika Anda menemukan itu pusat piksel hitam bertepatan dengan pusat piksel merah, Anda memiliki menemukan mata merah, dan output Anda harus "ya". Jika tidak, output Anda adalah "tidak".
 
